@@ -1,0 +1,76 @@
+.boton {
+  display: block;
+  width: 100%;
+}
+.boton-azul {
+  background-color: $azul;
+  color: $blanco;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  width: 8rem;
+  transition: 0.3s ease;
+  &:hover {
+    background-color: darken($azul, 30%);
+  }
+}
+.boton-gris {
+  @include boton(darken(#0da6f3, 20%), $gris);
+}
+.boton-eliminar {
+  color: $blanco;
+  background-color: $rojo;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 0.5rem 1rem;
+}
+.boton-cerrar {
+  @include boton($negro, $blanco);
+  &:hover {
+    background-color: lighten($negro, 10%);
+  }
+  border: 1px solid $blanco;
+}
+.boton-web {
+  background-color: $dorado;
+  font-size: 2rem;
+  padding: 1rem 3rem;
+  transition: background-color 0.3s ease;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin: 2rem 0 2rem 0;
+  &:hover {
+    background-color: #000000;
+  }
+}
+.btn-deshabilitar {
+  background-color: #525252;
+  border: none;
+  outline: none;
+  color: $blanco;
+  width: 8rem;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  &:hover {
+    background-color: darken(#525252, 30%);
+  }
+}
+
+.btn-habilitar{
+    @extend .btn-deshabilitar;
+    background-color: $verde;
+    &:hover {
+    background-color: darken($verde, 10%);
+  }
+}
+.btn-eliminar{
+    @extend .btn-deshabilitar;
+    background-color: $rojo;
+    &:hover {
+    background-color: darken($rojo, 10%);
+  }
+}

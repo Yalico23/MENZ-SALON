@@ -1,0 +1,17 @@
+.contenedor-contacto{
+    h2{
+        color: $blanco;
+        font-weight: 200;
+    }
+}
+.contacto{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    
+    picture{
+        text-align: center;
+        img{
+            filter: drop-shadow(19px 28px 21px #000000);
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "name": "oscar/plantilla",
+    "autoload":{
+        "psr-4": {
+            "MVC\\" : "./",
+            "Controllers\\" : "./controllers",
+            "Model\\" : "./models",
+            "Clases\\" : "./clases"
+        }
+    },
+    "authors": [
+        {
+            "name": "Oscar Yalico",
+            "email": "jeanpiero_23_01@hotmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.6",
+        "phpmailer/phpmailer": "^6.9",
+        "intervention/image": "2.7"
+    }
+}

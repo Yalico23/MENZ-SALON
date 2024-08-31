@@ -1,0 +1,69 @@
+.f-1{
+    background-color: $negro-intenso;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8rem 0;
+    .f-1-footer{
+        margin-top: 3rem;
+        @include grid(3,1rem);
+
+        @include desktop{
+            @include grid(1,1rem);
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            flex-direction: column;
+            @include desktop{
+                align-items: center;
+            }
+        }
+    
+        .address-info {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            @include desktop{
+                align-items: center;
+            }
+        }
+        
+        
+    }
+    picture{
+        text-align: center;
+    }
+    p{
+        font-size: 1.5rem;
+        margin: .3rem;
+        font-weight: 200;
+    }
+    .social{
+        padding: 2rem;
+        a{
+            display: inline-block;
+            border: 1px solid $dorado;
+            padding: .5rem;
+            margin: 0 2rem;
+            transition: .3s ease;
+            &:hover{
+                transform: scale(1.1);
+                background-color: rgb(0,0,0,0.5);
+            }
+            @include telefono{
+                margin: 0;
+            }
+        }
+        }
+}
+.f-2{
+    p{
+        text-align: center;
+        font-size: 1.4rem;
+        padding: 1rem;
+    }
+}

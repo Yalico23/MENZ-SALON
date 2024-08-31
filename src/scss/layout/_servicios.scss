@@ -1,0 +1,93 @@
+.fondo-service{
+    min-height: 90vh;
+    background-image: linear-gradient(
+        40deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      )
+    ,url(/build/img/bg-servicio.webp);
+    background-attachment:fixed; 
+    background-position: center bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2{
+        color: $dorado;
+        font-weight: 200;
+    }
+    a{
+        color: $dorado;
+        font-weight: $bold;
+        border-bottom: 1px solid $dorado;
+    }
+    span{
+        color: darken($blanco, 15%);
+        font-weight: 200;
+
+    }
+    span,a{
+        font-size: 1.8rem;
+    }
+}
+
+//
+.contenedor-servicios{
+    margin: 10rem 0;
+    @include grid(3,5rem);
+    
+    @include tablet{
+        @include grid(2,1rem);
+    }
+    @include telefono{
+        @include grid(1,1rem);
+    }
+}
+
+.servicio-contenedor{
+    border: 1px solid $gris;
+    transition: border .3s ease;
+    overflow: hidden;
+    @include tablet{
+        margin-bottom: 1rem;
+    }
+    @include telefono{
+        margin-bottom: 1rem;
+    }
+
+    &:hover{
+        border: 1px solid $dorado;
+    }
+    img{
+        transition: .3s ease;
+        &:hover{
+            transform: scale(1.1);
+            margin-bottom: 1rem;
+        }
+    }
+}
+.info-servicio{
+    padding: 1rem;
+    text-align: center;
+    h3{
+        color: $blanco;
+        font-weight: 200;
+        font-size: 2.4rem;
+    }
+    p{
+        font-size: 1.4rem;
+    }
+}
+.enlace{
+    margin: 4rem 0;
+    a{
+        background-color: #585858;
+        color: $blanco;
+        font-size: 1.5rem;
+        padding: 1rem 1.5rem;
+        transition: background-color .3s ease;
+        &:hover{
+            background-color: $dorado;
+        }
+    }
+}

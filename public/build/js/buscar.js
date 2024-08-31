@@ -1,0 +1,1 @@
+function admin(){buscarFecha()}function buscarFecha(){document.querySelector(".btn-buscar").addEventListener("click",(function(){actualizar()}))}function actualizar(){const n=document.querySelector("#Fecha").value;window.location="?fecha="+n}document.addEventListener("DOMContentLoaded",(function(){admin()}));

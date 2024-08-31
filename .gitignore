@@ -1,0 +1,5 @@
+.htaccess
+node_modules
+vendor
+includes/.env
+app.txt

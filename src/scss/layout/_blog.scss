@@ -1,0 +1,34 @@
+.contenedor-blog {
+  margin: 5rem 0;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  @include tablet{
+    display: block;
+  }
+}
+
+.blog-secundario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  h2 {
+    font-weight: 200;
+    color: $blanco;
+    @include tablet{
+        padding-top: 2rem;
+    }
+  }
+  span{
+    font-size: 1.5rem;
+    color: $blanco;
+    font-weight: 900;
+  }
+  li{
+    font-size: 1.3rem;
+    color: $blanco;
+    font-weight: 200;
+    margin: 1rem;
+  }
+}

@@ -1,0 +1,22 @@
+/*base*/
+@import 'base/mixins';
+@import 'base/normalize';
+@import 'base/variables';
+@import 'base/globales';
+@import 'base/tipografia';
+/*Componenetes*/
+@import 'components/alertas';
+@import 'components/botones';
+@import 'components/sweetAlerts';
+@import 'components/tabs';
+/*layout*/
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/index-main';
+@import 'layout/login';
+@import 'layout/cita';
+@import 'layout/admin';
+@import 'layout/servicios';
+@import 'layout/citaClientes';
+@import 'layout/blog';
+@import 'layout/contacto';

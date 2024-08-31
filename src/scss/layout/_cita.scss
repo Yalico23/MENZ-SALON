@@ -1,0 +1,90 @@
+.cita{
+    h1{
+        color: $blanco;
+        font-weight: 200;
+    }
+    p{
+        text-align: center;
+    }
+}
+.app{
+    width: 100%;
+}
+.seccion{
+    display: none;
+    margin-top: 3rem;
+    background-image: linear-gradient(
+      40deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url(/build/img/fondo-servicio.webp);
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 2rem;
+    h2{
+        color: $blanco;
+        font-weight: 200;
+    }
+}
+.mostrar{
+    display: block;
+}
+.ocultar{
+    visibility: hidden;
+}
+//seccion servicios
+#servicios{
+    @include grid(4,2rem);
+    @include telefono{
+        @include grid(2,1rem);
+    }
+}
+.div-servicio{
+    background-color: $naranja;
+    border-radius: 1rem;
+    padding: .5rem;
+    transition: .3s ease;
+    cursor: pointer;
+
+    &:hover{
+        transform: scale(1.1);
+        background-color: lighten($naranja, 10%);
+    }
+    &.seleccionado{
+        background-color: $negro-intenso;
+        p{
+          color: $dorado;
+        }
+      }
+    .nombre-servicio{
+        font-weight: 700;
+    }
+    .precio-servicio{
+        color: #fff;
+        font-weight: $bold;
+    }
+}
+
+//Paginacion
+.paginacion{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+//Resumen Servicio
+.contenido-resumen,.total-resumen{
+    color: $blanco;
+    font-weight: 200;
+    margin-top: 3rem;
+}
+.servicio-resumen{
+    @include grid(3,1rem);
+}
+.contenedor-servicio{
+    background-color: $negro-intenso;
+    color: #fff;
+    span{
+        font-weight: $bold;
+    }
+}

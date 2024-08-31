@@ -1,0 +1,45 @@
+.tabs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    button{
+        background-color: $dorado;
+        cursor: pointer;
+        padding: 2rem;
+        color:$blanco;
+        margin: .5rem;
+        transition: .3s ease;
+        border: 1px solid $negro-intenso;
+        outline: none;
+        
+        &:hover{
+            background-color: darken($dorado, 20%);
+        }
+        &.actual{
+            background-color: $negro-intenso;
+        }
+
+        @include telefono{
+            margin: 0;
+            height: 8rem;
+            font-size: 1.5rem;
+        }
+    }
+    
+}
+/*Admin*/
+.tabs-admin{
+    display: flex;
+    justify-content: center;
+    a{
+        background-color: $dorado;
+        color: $blanco;
+        padding: 2rem;
+        transition: background-color .3s ease;
+        margin: 1rem;
+        &:hover{
+            background-color: darken($dorado,20%);
+        }
+    }
+}
